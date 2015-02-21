@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+    <!--  Simplest java servlet -->
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>ua.goit.servlet.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <!-- Example of HTML web form and POST request -->
+    <servlet>
+        <servlet-name>HtmlForm</servlet-name>
+        <servlet-class>ua.goit.servlet.HtmlFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HtmlForm</servlet-name>
+        <url-pattern>/htmlForm</url-pattern>
+    </servlet-mapping>
+
+</web-app>
